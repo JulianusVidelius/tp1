@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <div>
+        <form action="" method="get">
+            <div class="contenedor">
+                <label for="nombres">
+                    Nombre: <input type="text" name="nombres" id="nombres" required maxlength="50">
+                </label> <br><br>
+
+                <label for="apellidos">
+                    Apellidos: <input type="text" name="apellidos" id="apellidos" required maxlength="50">
+                </label> <br><br>
+
+                <label>
+                    Sexo: 
+                    Hombre <input type="radio" name="genero" id="hombre" value="Hombre" required>
+                    Mujer <input type="radio" name="genero" id="mujer" value="Mujer" required>
+                </label> <br><br>
+
+                <label for="mail">
+                    Correo: <input type="email" name="mail" id="mail" required>
+                </label><br><br>
+
+                <label for="poblacion">Población:</label>
+                <select name="poblacion" id="poblacion" required>
+                    <option value="Alicante">Alicante</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Valencia">Valencia</option>
+                </select> <br><br>
+
+                <label for="descripcion">
+                    Descripción: <textarea name="descripcion" id="descripcion" rows="4" cols="50"></textarea>
+                </label> <br><br>
+
+                <label>
+                    <input type="checkbox" name="informacion" id="informacion" checked>
+                    Deseo recibir información sobre novedades y ofertas
+                </label> <br><br>
+
+                <label>
+                    <input type="checkbox" name="aceptar" id="aceptar" required>
+                    Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+                </label> <br><br>
+
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
